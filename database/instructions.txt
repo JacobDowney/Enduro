@@ -1,0 +1,90 @@
+Setting up postgres SQL server
+
+- Postgresql.org
+- Download postgres.app with postgreSQL latest release
+- Move application to downloads
+- open app and initialize
+- Run command which is shown on download page in terminal
+- 'psql -U postgre' command in terminal to open postgre portal
+- '\list' to list all databases
+- 'create database <name>' to create new database.
+
+Goal is to setup a postgresql database 'enduro'
+
+We will
+
+
+
+id    long	The unique identifier of this segment
+name  string	The name of this segment
+activity_type   string	May take one of the following values: Ride, Run
+distance    float	The segment's distance, in meters
+average_grade   float	The segment's average grade, in percents
+maximum_grade   float	The segments's maximum grade, in percents
+elevation_high    float	The segments's highest elevation, in meters
+elevation_low   float	The segments's lowest elevation, in meters
+start_latlng    LatLng	An instance of LatLng.
+end_latlng    LatLng	An instance of LatLng.
+climb_category    integer	The category of the climb [0, 5]. Higher is harder ie. 5 is Hors catégorie, 0 is uncategorized in climb_category.
+city    string	The segments's city.
+state   string	The segments's state or geographical region.
+country   string	The segment's country.
+private   boolean	Whether this segment is private.
+athlete_pr_effort   SummarySegmentEffort	An instance of SummarySegmentEffort.
+athlete_segment_stats   SummaryPRSegmentEffort	An instance of SummaryPRSegmentEffort.
+
+# Collections will be suffixed with '_amount' for a length of the list
+
+# ACTIVITY
+CREATE TABLE [IF NOT EXISTS] activities (
+   activity_id VARCHAR(12) PRIMARY KEY UNIQUE NOT NULL,
+   athlete_id VARCHAR(12) FOREIGN KEY UNIQUE NOT NULL,
+   name,
+   distance,
+   moving_time,
+   elapsed_time,
+   total_elevation_gain,
+   elevation_high,
+   elevation_low,
+   activity_type,
+   start_date,
+   start_date_local,
+   timezone,
+   start_latlng,
+   end_latlng,
+   achievement_count,
+   kudos_count,
+   comment_count,
+   athlete_count,
+   photo_count,
+   total_photo_count,
+   polymap_id,
+   polymap_polyline,
+   polymap_summary_polyline,
+   trainer,
+   commute,
+   manual,
+   private,
+   flagged,
+   workout_type,
+   average_speed,
+   max_speed,
+   kilojoules,
+   average_watts,
+   device_watts,
+   max_watts,
+   weighted_average_watts,
+   description,
+   photos_amount,
+   gear_id,
+   gear_primary,
+   gear_name,
+   gear_distance,
+   calories,
+   segment_efforts_amount,
+   device_name,
+   embed_token,
+   splits_metric,
+   splits_standard,
+   laps_amount
+);

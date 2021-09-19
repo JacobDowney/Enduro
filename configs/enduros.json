@@ -1,0 +1,26 @@
+{
+  "enduro_names": [
+    "aliso",
+    "anderson",
+    "teds"
+  ],
+
+  "enduros": {
+    "aliso": {
+      "6356818":  "Five Oaks Descent (MR)",
+      "609684":   "Rockit DH",
+      "8987943":  "CarWreck - Full Pull.",
+      "4255572":  "Lynx Downhill (Official)"
+    },
+    "anderson": {
+      "14769174":  "Fast and Loose",
+      "6870667":   "Finding Neo",
+      "1287420":   "No Name to Old Anderson",
+      "14659206":  "Spicolli 1.1",
+      "22996885":  "2.0 / Anderson DH"
+    },
+    "teds": {
+      "123": "SO NOTHING UPLOADS FOR IT"
+    }
+  }
+}

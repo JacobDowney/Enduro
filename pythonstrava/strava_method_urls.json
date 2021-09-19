@@ -1,0 +1,47 @@
+{
+    "create_activity":                          "",
+    "get_activity_by_id":                       "activities/{}",
+    "get_comments_by_activity_id":              "activities/{}/comments",
+    "get_kudoers_by_activity_id":               "activities/{}/kudos",
+    "get_laps_by_activity_id":                  "activities/{}/laps",
+    "get_logged_in_athlete_activities":         "athlete/activities",
+    "get_zones_by_activity_id":                 "activities/{}/zones",
+    "update_activity_by_id":                    "",
+
+    "get_logged_in_athlete":                    "athlete",
+    "get_logged_in_athlete_zones":              "athlete/zones",
+    "get_stats":                                "athletes/{}/stats",
+    "update_logged_in_athlete":                 "",
+
+    "get_club_activities_by_id":                "clubs/{}/activities",
+    "get_club_admins_by_id":                    "clubs/{}/admins",
+    "get_club_by_id":                           "clubs/{}",
+    "get_club_members_by_id":                   "clubs/{}/members",
+    "get_logged_in_athlete_clubs":              "athlete/clubs",
+
+    "get_gear_by_id":                           "gear/{}",
+
+    "get_route_as_gpx":                         "routes/{}/export_gpx",
+    "get_route_as_tcx":                         "routes/{}/export_tcx",
+    "get_route_by_id":                          "routes/{}",
+    "get_routes_by_athlete_id":                 "athletes/{}/routes",
+
+    "get_running_race_by_id":                   "running_races/{}",
+    "get_running_races":                        "running_races",
+
+    "get_efforts_by_segment_id":                "segment_efforts",
+    "get_segment_effort_by_id":                 "segment_efforts/{}",
+
+    "explore_segments":                         "segments/explore",
+    "get_logged_in_athlete_starred_segments":   "segments/starred",
+    "get_segment_by_id":                        "segments/{}",
+    "star_segment":                             "",
+
+    "get_activity_streams":                     "activities/{}/streams",
+    "get_route_streams":                        "routes/{}/streams",
+    "get_segment_effort_streams":               "segment_efforts/{}/streams",
+    "get_segment_streams":                      "segments/{}/streams",
+
+    "create_upload":                            "",
+    "get_upload_by_id":                         "uploads/{}"
+}
